@@ -12,23 +12,46 @@ namespace TechProTask1
     {
         public static void Main()
         {
+            
             Console.WriteLine("Enter the number of row for square");
             int x = Convert.ToInt32(Console.ReadLine());
-            Square_Hollow_Pattern(x);
-            Number_triangle_Pattern(x);
-            Number_increasing_Pyramid_Pattern(x);
-            Number_increasing_reverse_Pyramid_Pattern(x);
-            Number_changing_Pyramid_Pattern(x);
-            Zero_One_Triangle_Pattern(x);
-            Palindrome_Triangle_Pattern(x);
-            Rhombus_Pattern(x);
-            Diamond_Star_Pattern(x);
-            Mirror_Image_Triangle_Pattern(x);
-            Hollow_Triangle_Pattern(x);
-            Hollow_Reverse_Triangle_Pattern(x);
-            Hollow_Diamond_Pyramid(x);
-            Hollow_Hourglass_Pattern(x);
-            Pascals_Triangle(x);
+            if (x >= 3)
+            {
+                Square_Hollow_Pattern(x);
+                Console.WriteLine();
+                Number_triangle_Pattern(x);
+                Console.WriteLine();
+                Number_increasing_Pyramid_Pattern(x);
+                Console.WriteLine();
+                Number_increasing_reverse_Pyramid_Pattern(x);
+                Console.WriteLine();
+                Number_changing_Pyramid_Pattern(x);
+                Console.WriteLine();
+                Zero_One_Triangle_Pattern(x);
+                Console.WriteLine();
+                Palindrome_Triangle_Pattern(x);
+                Console.WriteLine();
+                Rhombus_Pattern(x);
+                Console.WriteLine();
+                Diamond_Star_Pattern(x);
+                Console.WriteLine();
+                Mirror_Image_Triangle_Pattern(x);
+                Console.WriteLine();
+                Hollow_Triangle_Pattern(x);
+                Console.WriteLine();
+                Hollow_Reverse_Triangle_Pattern(x);
+                Console.WriteLine();
+                Hollow_Diamond_Pyramid(x);
+                Console.WriteLine();
+                Hollow_Hourglass_Pattern(x);
+                Console.WriteLine();
+                Pascals_Triangle(x);
+
+            }
+            else
+            {
+                Console.WriteLine("Please Enter Value Greater then or Equals to 3");
+            }
             Console.ReadLine();
         }
 
