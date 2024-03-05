@@ -17,6 +17,7 @@ namespace TechProTask1
             int x = Convert.ToInt32(Console.ReadLine());
             if (x >= 3)
             {
+                Console.WriteLine();
                 Square_Hollow_Pattern(x);
                 Console.WriteLine();
                 Number_triangle_Pattern(x);
@@ -315,7 +316,7 @@ namespace TechProTask1
 
             for (int i = x; i >= 1; i--)
             {
-                for (int j = i; j <= x; j++)
+                for (int j = i; j <= x-1; j++)
                 {
                     Console.Write(" ");
                 }
